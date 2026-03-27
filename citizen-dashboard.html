@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Citizen Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Citizen</h2>
+    <button onclick="showSection('submit')">Submit Complaint</button>
+    <button onclick="showSection('view')">View Complaints</button>
+    <button onclick="showSection('track')">Track Status</button>
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="main">
+    <div id="submit" class="section">
+    <div class="card">
+        <h3>Submit Complaint</h3>
+        <input type="text" id="complaintTitle" placeholder="Complaint Title">
+        <button onclick="submitComplaint()">Submit</button>
+        <p id="submitMessage"></p>
+    </div>
+</div>
+    </div>
+    <div id="view" class="section">
+    <div class="card">
+     <h3>My Complaints</h3>
+    <div id="complaintList"></div>
+    </div>
+</div>
+
+    
+    </div>
+
+    <div id="track" class="section">
+        <div class="card">
+            <h3>Track Complaint</h3>
+            <p>Status tracking coming soon.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

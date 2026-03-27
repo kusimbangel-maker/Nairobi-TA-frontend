@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Admin</h2>
+    <button onclick="showSection('users')">Manage Users</button>
+    <button onclick="showSection('roles')">Assign Roles</button>
+    <button onclick="showSection('logs')">System Logs</button>
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="main">
+
+    <div id="users" class="section active">
+        <div class="card">
+            <h3>User Management</h3>
+            <p>User creation tools coming soon.</p>
+        </div>
+    </div>
+
+    <div id="roles" class="section">
+        <div class="card">
+            <h3>Role Assignment</h3>
+            <p>Role assignment tools coming soon.</p>
+        </div>
+    </div>
+
+    <div id="logs" class="section">
+        <div class="card">
+            <h3>System Logs</h3>
+            <p>System logs coming soon.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

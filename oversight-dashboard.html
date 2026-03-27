@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oversight Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Oversight</h2>
+    <button onclick="showSection('overview')">System Overview</button>
+    <button onclick="showSection('metrics')">Performance Metrics</button>
+    <button onclick="showSection('escalations')">Escalations</button>
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="main">
+
+    <div id="overview" class="section active">
+        <div class="card">
+            <h3>System Overview</h3>
+            <p>Overview data coming soon.</p>
+        </div>
+    </div>
+
+    <div id="metrics" class="section">
+        <div class="card">
+            <h3>Performance Metrics</h3>
+            <p>Metrics dashboard coming soon.</p>
+        </div>
+    </div>
+
+    <div id="escalations" class="section">
+        <div class="card">
+            <h3>Escalations</h3>
+            <p>Escalation monitoring tools coming soon.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

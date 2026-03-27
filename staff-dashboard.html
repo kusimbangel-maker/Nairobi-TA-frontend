@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Staff</h2>
+    <button onclick="showSection('assigned')">Assigned Complaints</button>
+    <button onclick="showSection('update')">Update Status</button>
+    <button onclick="showSection('reports')">Reports</button>
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="main">
+
+    <div id="assigned" class="section active">
+        <div class="card">
+            <h3>Assigned Complaints</h3>
+            <p>No assigned complaints.</p>
+        </div>
+    </div>
+
+    <div id="update" class="section">
+        <div class="card">
+            <h3>Update Complaint Status</h3>
+            <p>Status update tools coming soon.</p>
+        </div>
+    </div>
+
+    <div id="reports" class="section">
+        <div class="card">
+            <h3>Performance Reports</h3>
+            <p>Reports coming soon.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
